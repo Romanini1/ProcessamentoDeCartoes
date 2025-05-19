@@ -19,7 +19,3 @@ def reorder(pts: np.ndarray) -> np.ndarray:
     ordered[1] = pts[np.argmin(diff)]
     ordered[2] = pts[np.argmax(diff)]
     return ordered
-if name == "main":
-    respostas = testar_imagem_diretamente("caminho/para/sua_imagem.jpg")
-    for q, r in respostas:
-        print(f"Questão {q:02d}: {r}")
